@@ -1,20 +1,4 @@
-## Coffee Machine Refactoring Kata
-## Domain
-A coffee machine moves through: Empty → WaterFilled → BeansLoaded → CupPlaced → Brewed → Poured (back to Empty). 
-Each state only allows the next valid action.
-
-## Setup
-```bash
-uv sync
-```
-Settings > Add Interpreter > local interpreter > select existing > uv
-![img.png](img.png). Uv env use `CoffeeMachine/.venv/Scripts/python.exe`
-
-
-## Typechecker Setup
-Use either mypy (mypy --strict --allow-redefinition) or pyright (pyright in strict mode, 
-set "typeCheckingMode": "strict" in pyrightconfig.json). 
-Pyright handles variable redefinition out of the box — no extra flag needed. Pick one and stick with it throughout.
+# Coffee Machine Refactoring Kata
 
 ## Assignment (20 mins)
 Implement the Typestate pattern only. Create a separate class per state, 
@@ -48,3 +32,21 @@ The pour() method on the final state should return `tuple[str, EmptyMachine]` to
 - pyrefly: rust-based from meta, very fast. Still in active development. More aggressive
 
 https://blog.edward-li.com/tech/comparing-pyrefly-vs-ty/
+
+## Domain
+A coffee machine moves through: Empty → WaterFilled → BeansLoaded → CupPlaced → Brewed → Poured (back to Empty). 
+Each state only allows the next valid action.
+
+## Setup
+```bash
+uv sync
+```
+Settings > Add Interpreter > local interpreter > select existing > uv
+![img.png](img.png). Uv env use `CoffeeMachine/.venv/Scripts/python.exe`
+
+
+## Typechecker Setup
+Use either mypy (mypy --strict --allow-redefinition) or pyright (pyright in strict mode, 
+set "typeCheckingMode": "strict" in pyrightconfig.json). 
+Pyright handles variable redefinition out of the box — no extra flag needed. Pick one and stick with it throughout.
+
