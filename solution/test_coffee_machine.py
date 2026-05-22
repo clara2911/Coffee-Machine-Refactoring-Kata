@@ -24,7 +24,6 @@ class TestHappyPath:
 class TestInvalidTransitions:
     # Note: in a real code base with static type checking, these tests would not exist.
     # Type violations are caught by mypy before running, not at runtime.
-    # But keeping them here for my own educational purpose :)
 
     # λ mypy --strict --allow-redefinition --no-incremental test_coffee_machine.py
     # coffee_machine.py:32: error: "EmptyMachine" has no attribute "brew"  [attr-defined]
