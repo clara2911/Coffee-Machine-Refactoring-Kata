@@ -49,7 +49,7 @@ https://blog.edward-li.com/tech/comparing-pyrefly-vs-ty/
 uv sync
 ```
 Settings > Add Interpreter > local interpreter > select existing > uv
-![img.png](img.png). Uv env use `CoffeeMachine/.venv/Scripts/python.exe`
+Uv env use `CoffeeMachine/.venv/Scripts/python.exe`
 
 
 ## Typechecker Setup
