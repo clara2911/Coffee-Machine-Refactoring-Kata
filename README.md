@@ -49,11 +49,12 @@ https://blog.edward-li.com/tech/comparing-pyrefly-vs-ty/
 uv sync
 ```
 Settings > Add Interpreter > local interpreter > select existing > uv
+
 Uv env use `CoffeeMachine/.venv/Scripts/python.exe`
 
 
 ## Typechecker Setup
 Use either mypy (`mypy --strict --allow-redefinition`) or pyright (pyright in strict mode, 
 set `"typeCheckingMode": "strict"` in `pyrightconfig.json`). 
-Pyright handles variable redefinition out of the box — no extra flag needed. Pick one and stick with it throughout.
+Pyright handles variable redefinition out of the box, no extra flag needed. Pick one and stick with it throughout.
 
